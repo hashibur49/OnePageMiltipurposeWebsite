@@ -1,0 +1,678 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400&family=Satisfy&display=swap');
+
+/* Common Css */
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    color: #333;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.bg{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bg::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .75;
+  z-index: -1;
+   
+}
+
+.padding-top{
+    padding-top: 100px;
+}
+.padding-bottom{
+    padding-bottom: 100px;
+}
+
+/* Common Button Design */
+.box-btn {
+    display: inline-block;
+    background: #635CD8;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 30px;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .box-btn:hover i {
+    right:12px;
+    opacity: 1;
+  }
+
+.box-btn i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    right: 25px;
+    opacity: 0;
+  }
+/* Common Button Design */
+/* Common Section Title */
+
+/* Common Section Title */
+.section-title{
+    position: relative;
+}
+
+.section-title h2{
+    text-transform: capitalize;
+}
+
+ 
+
+
+.section-title::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #635CD8;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 124px;
+    height: 2px;
+    background-color: #635CD8;
+    left: 45.5%;
+    transform: rotate(90deg);
+    bottom: 0;
+    top: 13%;
+}
+
+/* Common Css */
+/* Top area design start here */
+.top-area{
+    background-color: #635CD8;
+    padding: 10px 0;
+     
+}
+
+.top-left a{
+    color: #fff;
+    margin-left: 16px;
+    padding: 0;
+}
+
+.top-social{
+    text-align: right;
+}
+
+.top-social a{
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Top area design End here */
+
+/* Header area design start here */
+ 
+.navbar-brand{
+     
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000; 
+    font-weight: 500;
+}
+ 
+.navbar-nav a:hover{
+    color: #635CD8 !important;
+}
+
+/* Header area design End here */
+
+/* Slider area design start here */
+ .slider-area , .sliders, .single-slider, .slider-area .owl-stage-outer,
+ .slider-area .owl-stage,.slider-area .owl-item{
+    height: 100%;
+    position: relative;
+} 
+
+.slider-area .owl-dots{
+    position: absolute;
+    right: 40px;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    transform: translate(-50%);
+}
+.slider-area .owl-dots button{
+    background-color: #fff !important;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0px;
+}
+
+.owl-dots .owl-dot.active{
+    background-color: #635CD8 !important;
+}
+
+.slider-content{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.slider-content h4 {
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.slider-content h4::before {
+    position: absolute;
+    content: "";
+    background-color: #635CD8;
+    width: 70%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-content h1 {
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 50px;
+}
+
+/* Slider area design End here */
+
+ /* About Area Start Here   */
+.section-title{
+    position: relative;
+}
+
+.section-title::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #635CD8;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 124px;
+    height: 2px;
+    background-color: #635CD8;
+    left: 45.5%;
+    transform: rotate(90deg);
+    bottom: 0;
+    top: 13%;
+}
+
+.single-about{
+    display: flex;
+    align-items: center;
+}
+.single-about-content h4{
+    position: relative;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    
+}
+.single-about-content h4::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #635CD8;
+    left: 6%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+}
+.icon{
+    padding-right: 25px;
+}
+.icon i{
+    font-size: 20px;
+    border: 1px solid #635CD8;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px; 
+    transition: 0.3s;
+}
+
+.single-about:hover .icon i{
+   background-color: #635CD8;
+   color: #fff;
+}
+ 
+ /* About Area End Here  */
+
+/* Skill Area  Start Here  */
+
+  .skill-title h4{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 26px;
+      font-weight: 400;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+
+  }
+
+  .skill-title h4::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #635CD8;
+    bottom: 0;
+}
+
+.accordion .accordion-button {
+        background-color: #635CD8;
+        color: #fff;
+        box-shadow: none;
+    }
+.single-progress{
+      padding-bottom: 32px;
+    }
+.single-progress h4{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.progress {
+    height: 30px;
+  }
+
+.progress-bar{
+      background-color: #635CD8;
+      font-size: 16px;
+}
+
+  /* Skill Area  End Here  */
+
+/* Service Area Design Start Here  */
+.section-title{
+    margin-bottom: 100px;
+}
+.single-service{
+    text-align: center;
+    box-shadow: 0px 10px 30px 0px rgb(216, 198, 198);
+    padding: 10px 20px; 
+    margin-bottom: 25px;
+    border-bottom: 3px solid transparent;
+}
+
+.single-service:hover{
+    border-bottom: 3px solid #635CD8;
+}
+
+ 
+
+.service-content h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+
+.srvice-icon i{
+    font-size: 20px;
+    border: 1px solid #635CD8;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px; 
+    background-color: #635CD8;
+    color: #fff;
+    transition: 0.3s;
+    margin-bottom: 12px;
+}
+
+.single-service:hover .srvice-icon i{
+    background: none;
+    color: #000;
+}
+
+/* Service Area Design End Here  */
+
+/* Counter Area Design Start Here  */
+.single-counter{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    background-color: #291e47;
+    color: #fff;
+}
+
+.single-counter i{
+     font-size: 20px;
+     background-color: #635CD8;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     border-radius: 50%;
+     color: #fff;
+     margin-right: 15px;
+     text-align: center;
+     transition: 0.3s;
+}
+
+ 
+
+.col-xxl-3:hover .single-counter i{
+    color: #000;
+    background-color: #a78bf5;
+}
+
+.single-counter h4 span{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.single-counter h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.counter-area .col-xxl-3:nth-child(2n) .single-counter{
+    background-color: #130a2b;
+}
+
+/* Counter Area Design End Here  */
+
+/* Team Area Design Start Here  */
+
+.single-team{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.single-team img{
+     width: 100%;
+     height: 100%;
+}
+ 
+.team-content{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 2;
+    
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1);
+    /* visibility: visible; */
+}
+
+.team-content::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.80;
+    z-index: -1;
+    
+}
+
+.team-content h4 span{
+    display: block;
+}
+
+.team-content h4 {
+     font-size: 30px;
+     font-weight: 600;
+}
+
+.team-icon a i{
+    color: #fff;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+
+.single-team:hover .team-content{
+    /* visibility: visible;
+    opacity: 1; */
+    /* transform: scale(1); */
+}
+
+/* Team Area Design End Here  */
+
+/* Client Area Design Start Here  */
+
+.client-area .section-title {
+    color: #fff;
+  }
+.single-client img{
+    width: 100px;
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 5px;
+}
+
+ 
+
+.single-client{
+    text-align: center;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #333;
+   
+}
+ 
+
+.single-client span{
+    display: block;
+}
+
+.owl-item.active.center .single-client {
+    background: #635CD8 !important;
+  }
+ 
+/* Client Area Design End Here  */
+
+/* Blog Area Start Here */
+.single-blog{
+    border: 1px solid rgb(245, 238, 238);
+}
+
+.single-blog img{
+    width: 100%;
+}
+
+.single-blog h4{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 600;   
+}
+
+.single-blog p{
+    border-top: 1px dashed #ddd;
+    padding-top: 15px; 
+}
+.blog-title h4{
+    margin-bottom: 0;
+}
+.blog-content{
+    padding: 15px 20px;
+}
+
+ 
+
+/* Blog Area End Here */
+
+/* CTA Area Start Here */
+.cta-area h4{
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.cta-area p{
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.cta-area{
+    position: relative;
+    padding: 40px 0;
+    color: #fff;
+    z-index: 2;
+}
+
+.cta-area::before{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-color: #130a2b;
+    color: #fff;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.cta-area::after{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-color: #291e47;
+    color: #fff;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+ 
+/* CTA Area End Here */
+
+
+/* Footer Area Start Here */
+.footer-area{
+    color: #fff;
+}
+
+.singel-footer h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.singel-footer p{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.singel-footer h4{
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.singel-footer h4::after{
+     position: absolute;
+     content: '';
+     width: 25%;
+     height: 3px;
+     background-color: #050505;
+     left: 0;
+     bottom: 0;
+}
+
+.singel-footer ul{
+    margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+.singel-footer ul li{
+     list-style: none;
+}
+
+.singel-footer ul li a{
+    color: #fff;
+}
+
+
+
+.footer-social a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+.footer-bottom{
+    position: relative;
+    padding-top: 20px;
+}
+
+.footer-bottom::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #050505;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+}
+
+
+
+/* Footer Area End Here */
